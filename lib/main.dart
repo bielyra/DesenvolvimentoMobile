@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:myapp/pag2.dart';
 
 void main() {
   runApp(const MeuApp());
@@ -57,7 +58,16 @@ class _HomePageState extends State<HomePage> {
               DropdownMenuItem(child: Text("Inglês"), value: "Inglês"),
             ], 
             value: materia,
-            onChanged: dropdownCallback)
+            onChanged: dropdownCallback),
+            ElevatedButton(onPressed: (){
+              if(materia == 'Matemática'){
+                Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => const Matematica()),
+            );
+              }
+              
+            }, child: Text("Entrar"))
           ],
         )
       ),
