@@ -6,7 +6,7 @@ Este é um aplicativo mobile, projeto da cadeira de **Programação para disposi
 
 ## 🚀Funcionalidades
 
-<h2>As matérias disponíveis no aplicativo são: matemática, português, geografia, história, ciência e inglês. <h2>
+<h2>As matérias disponíveis no aplicativo são: <h2>
 
 - 📐 Matemática
 - 📖 Português
