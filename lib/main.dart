@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 import 'package:myapp/pag2.dart'; // Supondo que Matematica() esteja aqui
-// Importe outras páginas conforme você for criando
+import 'package:myapp/pag3.dart';
+import 'package:myapp/pag4.dart';
+import 'package:myapp/pag5.dart';
+import 'package:myapp/pag6.dart';
+import 'package:myapp/pag7.dart'; // Importe outras páginas conforme você for criando
 
 void main() {
   runApp(const MeuApp());
@@ -13,9 +18,7 @@ class MeuApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Aprende Aí',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
+      theme: ThemeData(primarySwatch: Colors.blue),
       home: const HomePage(),
     );
   }
@@ -48,20 +51,34 @@ class _HomePageState extends State<HomePage> {
         );
         break;
       case 'Português':
-        // Navigator.push(context, MaterialPageRoute(builder: (context) => const Portugues()));
-        mostrarIndisponivel();
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => const Portugues()),
+        );
         break;
       case 'Geografia':
-        mostrarIndisponivel();
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => const Geografia()),
+        );
         break;
       case 'História':
-        mostrarIndisponivel();
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => const Historia()),
+        );
         break;
       case 'Ciências':
-        mostrarIndisponivel();
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => const Ciencias()),
+        );
         break;
       case 'Inglês':
-        mostrarIndisponivel();
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => const Ingles()),
+        );
         break;
       default:
         mostrarIndisponivel();
@@ -77,6 +94,7 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: const Color(0xFFF8F8F8),
       appBar: AppBar(
         title: const Text(
           "📘 Aprende Aí",
@@ -104,12 +122,24 @@ class _HomePageState extends State<HomePage> {
                   ),
                   filled: true,
                   fillColor: Colors.blue[50],
-                  contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+                  contentPadding: const EdgeInsets.symmetric(
+                    horizontal: 16,
+                    vertical: 12,
+                  ),
                 ),
                 items: const [
-                  DropdownMenuItem(value: "Matemática", child: Text("Matemática")),
-                  DropdownMenuItem(value: "Português", child: Text("Português")),
-                  DropdownMenuItem(value: "Geografia", child: Text("Geografia")),
+                  DropdownMenuItem(
+                    value: "Matemática",
+                    child: Text("Matemática"),
+                  ),
+                  DropdownMenuItem(
+                    value: "Português",
+                    child: Text("Português"),
+                  ),
+                  DropdownMenuItem(
+                    value: "Geografia",
+                    child: Text("Geografia"),
+                  ),
                   DropdownMenuItem(value: "História", child: Text("História")),
                   DropdownMenuItem(value: "Ciências", child: Text("Ciências")),
                   DropdownMenuItem(value: "Inglês", child: Text("Inglês")),
@@ -121,7 +151,10 @@ class _HomePageState extends State<HomePage> {
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.blue,
                   foregroundColor: Colors.white,
-                  padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 14),
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 32,
+                    vertical: 14,
+                  ),
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(10),
                   ),
