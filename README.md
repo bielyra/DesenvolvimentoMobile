@@ -1,16 +1,26 @@
-# myapp
+# Aprende Aí! (Firebase Studio + Flutter)
 
-A new Flutter project.
+Este é um aplicativo mobile, projeto da cadeira de **Programação para dispositivos móveis ** que tem como propósito funcionar como um aplicativo para ajudar crianças do Ensino Fundamental 1 a estudar. Ele ajuda ao usuário rever alguns conceitos através do uso de flashcards. 
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## 🚀Funcionalidades
 
-A few resources to get you started if this is your first Flutter project:
+<h2>As matérias disponíveis no aplicativo são: matemática, português, geografia, história, ciência e inglês. <h2>
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- 📐 Matemática
+- 📖 Português
+- 🌍 Geografia
+- 🏰 História
+- 🔬 Ciências
+- 🗣️ Inglês
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+---
+## 🛠️Tecnologias Utilizadas
+
+- [Flutter + Dart](https://docs.flutter.dev/)
+- [Firebase Studio](https://firebase.studio/)
+
+---
+## 📦Para Executar Localmente
+
