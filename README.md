@@ -4,7 +4,9 @@ Este é um aplicativo mobile, projeto da cadeira de **Programação para disposi
 
 ## <h1 align = "center">🚀Funcionalidades </h1>
 
-<h4>As matérias disponíveis no aplicativo são: matemática, português, geografia, história, ciência e inglês. </h4>
+## 🚀Funcionalidades
+
+<h2>As matérias disponíveis no aplicativo são: matemática, português, geografia, história, ciência e inglês. <h2>
 
 - 📐 Matemática
 - 📖 Português
@@ -13,10 +15,12 @@ Este é um aplicativo mobile, projeto da cadeira de **Programação para disposi
 - 🔬 Ciências
 - 🗣️ Inglês
 
-## <h1 align = "center">🛠️Tecnologias Utilizadas</h1>
+---
+## 🛠️Tecnologias Utilizadas
 
 - [Flutter + Dart](https://docs.flutter.dev/)
 - [Firebase Studio](https://firebase.studio/)
 
-## <h1 align = "center">📦Para Executar Localmente</h1>
+---
+## 📦Para Executar Localmente
 
