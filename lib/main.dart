@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
-import 'package:myapp/pag2.dart'; // Supondo que Matematica() esteja aqui
-import 'package:myapp/pag3.dart';
-import 'package:myapp/pag4.dart';
-import 'package:myapp/pag5.dart';
-import 'package:myapp/pag6.dart';
-import 'package:myapp/pag7.dart'; // Importe outras páginas conforme você for criando
+import 'package:myapp/pag2.dart'; // Matemática
+import 'package:myapp/pag3.dart'; // Português
+import 'package:myapp/pag4.dart'; // Geografia
+import 'package:myapp/pag5.dart'; // História
+import 'package:myapp/pag6.dart'; // Ciências
+import 'package:myapp/pag7.dart'; // Inglês
 
 void main() {
   runApp(const MeuApp());
@@ -18,7 +17,10 @@ class MeuApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Aprende Aí',
-      theme: ThemeData(primarySwatch: Colors.blue),
+      theme: ThemeData(
+        primarySwatch: Colors.deepOrange,
+        fontFamily: 'ComicSansMS', // Use uma fonte divertida (adicione no pubspec se quiser)
+      ),
       home: const HomePage(),
     );
   }
@@ -45,40 +47,22 @@ class _HomePageState extends State<HomePage> {
   void navegarParaMateria() {
     switch (materia) {
       case 'Matemática':
-        Navigator.push(
-          context,
-          MaterialPageRoute(builder: (context) => const Matematica()),
-        );
+        Navigator.push(context, MaterialPageRoute(builder: (context) => const Matematica()));
         break;
       case 'Português':
-        Navigator.push(
-          context,
-          MaterialPageRoute(builder: (context) => const Portugues()),
-        );
+        Navigator.push(context, MaterialPageRoute(builder: (context) => const Portugues()));
         break;
       case 'Geografia':
-        Navigator.push(
-          context,
-          MaterialPageRoute(builder: (context) => const Geografia()),
-        );
+        Navigator.push(context, MaterialPageRoute(builder: (context) => const Geografia()));
         break;
       case 'História':
-        Navigator.push(
-          context,
-          MaterialPageRoute(builder: (context) => const Historia()),
-        );
+        Navigator.push(context, MaterialPageRoute(builder: (context) => const Historia()));
         break;
       case 'Ciências':
-        Navigator.push(
-          context,
-          MaterialPageRoute(builder: (context) => const Ciencias()),
-        );
+        Navigator.push(context, MaterialPageRoute(builder: (context) => const Ciencias()));
         break;
       case 'Inglês':
-        Navigator.push(
-          context,
-          MaterialPageRoute(builder: (context) => const Ingles()),
-        );
+        Navigator.push(context, MaterialPageRoute(builder: (context) => const Ingles()));
         break;
       default:
         mostrarIndisponivel();
@@ -94,72 +78,86 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFFF8F8F8),
+      backgroundColor: const Color(0xFFFFF3E0), // Cor pastel clara
       appBar: AppBar(
+        backgroundColor: const Color(0xFFFFB74D),
         title: const Text(
-          "📘 Aprende Aí",
-          style: TextStyle(fontWeight: FontWeight.bold, fontSize: 22),
+          "📘 Aprende Aí!",
+          style: TextStyle(
+            fontWeight: FontWeight.bold,
+            fontSize: 24,
+          ),
         ),
         centerTitle: true,
       ),
       body: Center(
-        child: Padding(
-          padding: const EdgeInsets.all(24.0),
+        child: SingleChildScrollView(
+          padding: const EdgeInsets.all(24),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
+              Image.network(
+                'https://raw.githubusercontent.com/bielyra/projeto_PLP/refs/heads/main/Remove_background_project_3.png',
+                height: 180,
+              ),
+              const SizedBox(height: 16),
               const Text(
-                "Selecione uma matéria:",
-                style: TextStyle(fontSize: 18),
+                "Olá! Vamos aprender brincando? 🎉",
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  fontSize: 20,
+                  fontWeight: FontWeight.w600,
+                  color: Colors.deepOrange,
+                ),
+              ),
+              const SizedBox(height: 24),
+              const Text(
+                "Escolha sua matéria favorita:",
+                style: TextStyle(
+                  fontSize: 18,
+                  fontWeight: FontWeight.w500,
+                  color: Colors.black87,
+                ),
               ),
               const SizedBox(height: 12),
               DropdownButtonFormField<String>(
+                dropdownColor: Colors.orange[100],
                 value: materia,
                 onChanged: dropdownCallback,
                 decoration: InputDecoration(
                   border: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(12),
+                    borderRadius: BorderRadius.circular(16),
                   ),
                   filled: true,
-                  fillColor: Colors.blue[50],
-                  contentPadding: const EdgeInsets.symmetric(
-                    horizontal: 16,
-                    vertical: 12,
-                  ),
+                  fillColor: Colors.orange[100],
+                  contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
                 ),
                 items: const [
-                  DropdownMenuItem(
-                    value: "Matemática",
-                    child: Text("Matemática"),
-                  ),
-                  DropdownMenuItem(
-                    value: "Português",
-                    child: Text("Português"),
-                  ),
-                  DropdownMenuItem(
-                    value: "Geografia",
-                    child: Text("Geografia"),
-                  ),
-                  DropdownMenuItem(value: "História", child: Text("História")),
-                  DropdownMenuItem(value: "Ciências", child: Text("Ciências")),
-                  DropdownMenuItem(value: "Inglês", child: Text("Inglês")),
+                  DropdownMenuItem(value: "Matemática", child: Text("📐 Matemática")),
+                  DropdownMenuItem(value: "Português", child: Text("📖 Português")),
+                  DropdownMenuItem(value: "Geografia", child: Text("🌍 Geografia")),
+                  DropdownMenuItem(value: "História", child: Text("🏰 História")),
+                  DropdownMenuItem(value: "Ciências", child: Text("🔬 Ciências")),
+                  DropdownMenuItem(value: "Inglês", child: Text("🗣️ Inglês")),
                 ],
               ),
               const SizedBox(height: 24),
-              ElevatedButton(
+              ElevatedButton.icon(
                 onPressed: navegarParaMateria,
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.blue,
+                  backgroundColor: Colors.deepOrange,
                   foregroundColor: Colors.white,
-                  padding: const EdgeInsets.symmetric(
-                    horizontal: 32,
-                    vertical: 14,
-                  ),
+                  padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 16),
                   shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(10),
+                    borderRadius: BorderRadius.circular(20),
                   ),
+                  elevation: 4,
                 ),
-                child: const Text("Entrar"),
+                icon: const Icon(Icons.play_arrow),
+                label: const Text(
+                  "Começar",
+                  style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                ),
               ),
             ],
           ),
