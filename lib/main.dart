@@ -5,6 +5,8 @@ import 'package:myapp/pag4.dart'; // Geografia
 import 'package:myapp/pag5.dart'; // História
 import 'package:myapp/pag6.dart'; // Ciências
 import 'package:myapp/pag7.dart'; // Inglês
+import 'package:google_fonts/google_fonts.dart';
+
 
 void main() {
   runApp(const MeuApp());
@@ -19,7 +21,7 @@ class MeuApp extends StatelessWidget {
       title: 'Aprende Aí',
       theme: ThemeData(
         primarySwatch: Colors.deepOrange,
-        fontFamily: 'ComicSansMS', // Use uma fonte divertida (adicione no pubspec se quiser)
+        textTheme: GoogleFonts.robotoTextTheme(), // Use uma fonte divertida (adicione no pubspec se quiser)
       ),
       home: const HomePage(),
     );
@@ -81,9 +83,9 @@ class _HomePageState extends State<HomePage> {
       backgroundColor: const Color(0xFFFFF3E0), // Cor pastel clara
       appBar: AppBar(
         backgroundColor: const Color(0xFFFFB74D),
-        title: const Text(
+        title: Text(
           "📘 Aprende Aí!",
-          style: TextStyle(
+          style: GoogleFonts.roboto(
             fontWeight: FontWeight.bold,
             fontSize: 24,
           ),
@@ -101,19 +103,19 @@ class _HomePageState extends State<HomePage> {
                 height: 180,
               ),
               const SizedBox(height: 16),
-              const Text(
+              Text(
                 "Olá! Vamos aprender brincando? 🎉",
                 textAlign: TextAlign.center,
-                style: TextStyle(
+                style: GoogleFonts.roboto(
                   fontSize: 20,
                   fontWeight: FontWeight.w600,
                   color: Colors.deepOrange,
                 ),
               ),
               const SizedBox(height: 24),
-              const Text(
+              Text(
                 "Escolha sua matéria favorita:",
-                style: TextStyle(
+                style: GoogleFonts.roboto(
                   fontSize: 18,
                   fontWeight: FontWeight.w500,
                   color: Colors.black87,
@@ -131,6 +133,11 @@ class _HomePageState extends State<HomePage> {
                   filled: true,
                   fillColor: Colors.orange[100],
                   contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+                ),
+                style: GoogleFonts.roboto(
+                  fontSize: 16,
+                  fontWeight: FontWeight.w500,
+                  color: Colors.black87,
                 ),
                 items: const [
                   DropdownMenuItem(value: "Matemática", child: Text("📐 Matemática")),
@@ -154,9 +161,12 @@ class _HomePageState extends State<HomePage> {
                   elevation: 4,
                 ),
                 icon: const Icon(Icons.play_arrow),
-                label: const Text(
+                label: Text(
                   "Começar",
-                  style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                  style: GoogleFonts.roboto(
+                    fontSize: 18,
+                    fontWeight: FontWeight.bold
+                  ),
                 ),
               ),
             ],
