@@ -15,12 +15,9 @@ Este é um aplicativo mobile, projeto da cadeira de **Programação para disposi
 - 🔬 Ciências
 - 🗣️ Inglês
 
----
 ## 🛠️Tecnologias Utilizadas
 
 - [Flutter + Dart](https://docs.flutter.dev/)
 - [Firebase Studio](https://firebase.studio/)
 
----
-## 📦Para Executar Localmente
 
