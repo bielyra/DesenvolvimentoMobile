@@ -75,3 +75,29 @@ final List<String> respostasHistoria = [
   'Foram extintos',
   'Quando o Brasil deixou de ser colônia de Portugal',
 ];
+
+final List<String> perguntasCiencias = [
+  'Qual órgão do corpo humano é responsável por bombear o sangue?',
+  'Qual é o maior planeta do sistema solar?',
+  'Que animal põe ovos: a vaca, a galinha ou o cachorro?',
+  'Como se chama a transformação da água em vapor?',
+  'Qual parte da planta absorve água do solo?',
+  'O que os seres humanos precisam para respirar?',
+  'Qual é o astro que ilumina e aquece a Terra?',
+  'Como chamamos os animais que vivem na água?',
+  'Em qual estado está a água em um cubo de gelo?',
+  'Qual é o nome do gás que as plantas liberam durante a fotossíntese?',
+];
+
+final List<String> respostasCiencias = [
+  'O coração',
+  'Júpiter',
+  'A galinha',
+  'Evaporação',
+  'As raízes',
+  'Oxigênio',
+  'O Sol',
+  'Aquáticos',
+  'Estado sólido',
+  'Oxigênio',
+];
