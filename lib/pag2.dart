@@ -1,6 +1,8 @@
+import 'dart:math';
 import 'package:animated_switcher_plus/animated_switcher_plus.dart';
 import 'package:flutter/material.dart';
-
+import 'package:myapp/dados.dart';
+import 'dados.dart';
 
 
 class Matematica extends StatefulWidget {
@@ -13,6 +15,18 @@ class Matematica extends StatefulWidget {
 
 class _MatematicaState extends State<Matematica> {
   bool _showFirst = true; // Track which widget to display
+  var randommath = Random().nextInt(10);
+  void randomizermath(){
+    setState(() {
+      var randommath2 = Random().nextInt(10);
+      if(randommath2 != randommath){
+        randommath = randommath2;
+      }
+      else{
+        randomizermath();
+      }     
+    });
+  }
 
   void _toggleWidgets() {
     setState(() {
@@ -39,7 +53,7 @@ class _MatematicaState extends State<Matematica> {
                       color: Colors.blue,
                       child: Center(
                         child: Text(
-                          '10 + 10 é igual a ',
+                          perguntasMath[randommath],
                           style: TextStyle(
                             fontSize: 12,
                             color: Colors.white,
@@ -54,7 +68,7 @@ class _MatematicaState extends State<Matematica> {
                       color: Colors.green,
                       child: Center(
                         child: Text(
-                          '20',
+                          respostasMath[randommath],
                           style: TextStyle(
                             fontSize: 12,
                             color: Colors.white,
@@ -67,6 +81,11 @@ class _MatematicaState extends State<Matematica> {
             ElevatedButton(
               onPressed: _toggleWidgets,
               child: Text('Ver Resposta'),
+            ),
+            SizedBox(height: 20),
+            ElevatedButton(
+              onPressed: randomizermath,
+              child: Text('Próxima Pergunta'),
             ),
           ],
         ),
