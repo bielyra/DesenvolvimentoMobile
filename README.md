@@ -22,8 +22,8 @@ Este é um aplicativo mobile, projeto da cadeira de **Programação para disposi
 
 ## Integrantes do Projeto
 
-<p>
-  Gabriel Ouriques Rafael Lyra
-  Ruy Geroncio da Silva Neto
-  João Vitor Fernandes de Souza
-</p>
+---
+
+<p>Gabriel Ouriques Rafael Lyra</p>
+<p>Ruy Geroncio da Silva Neto</p>
+<p>João Vitor Fernandes de Souza</p>
