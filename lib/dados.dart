@@ -109,7 +109,7 @@ final List<String> perguntasPortugues = [
   'A palavra "amigo" é um... (verbo / substantivo / adjetivo)',
   'Qual é o antônimo (contrário) de "triste"?',
   'Qual dessas palavras é um verbo? (comer / mesa / flor)',
-  'Qual o coletivo de lobos?',
+  'Qual o coletivo de lobo?',
   'O que é uma sílaba?',
   'Quais são as vogais?',
   'O que é um substantivo?',
@@ -126,4 +126,30 @@ final List<String> respostasPortugues = [
   'É o som ou grupo de sons de uma palavra',
   ' A, E, I, O e U',
   'É o nome de pessoas, lugares, objetos ou sentimentos',
+];
+
+final List<String> perguntasIngles = [
+  'Como se diz "olá" em inglês?',
+  'Qual é a cor da banana? (Responda em inglês)',
+  'O que significa "cat"?',
+  'Como se diz "obrigado(a)" em inglês?',
+  'What number comes after five?',
+  'Como se fala "água" em inglês?',
+  'Qual o dia que vem depois de "Monday?" ',
+  'O que significa "school"?',
+  'Como se diz “bom dia” em inglês?',
+  'Qual o oposto de "big"?',
+];
+
+final List<String> respostasIngles = [
+  'Hello',
+  'Yellow',
+  'Gato',
+  'Thank you',
+  'Six',
+  'Water',
+  'Tuesday',
+  'Escola',
+  'Good morning',
+  'Small',
 ];
