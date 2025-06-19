@@ -49,7 +49,7 @@ class _HomePageState extends State<HomePage> {
   void navegarParaMateria() {
     switch (materia) {
       case 'Matemática':
-        Navigator.push(context, MaterialPageRoute(builder: (context) => const Matematica()));
+        Navigator.push(context, MaterialPageRoute(builder: (context) => Matematica()));
         break;
       case 'Português':
         Navigator.push(context, MaterialPageRoute(builder: (context) => const Portugues()));
