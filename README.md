@@ -6,7 +6,7 @@ Este é um aplicativo mobile, projeto da cadeira de **Programação para disposi
 
 ## 🚀Funcionalidades
 
-<h2>As matérias disponíveis no aplicativo são: matemática, português, geografia, história, ciência e inglês. <h2>
+<h2>As matérias disponíveis no aplicativo são: <h2>
 
 - 📐 Matemática
 - 📖 Português
@@ -20,4 +20,10 @@ Este é um aplicativo mobile, projeto da cadeira de **Programação para disposi
 - [Flutter + Dart](https://docs.flutter.dev/)
 - [Firebase Studio](https://firebase.studio/)
 
+## Integrantes do Projeto
 
+<p>
+  Gabriel Ouriques Rafael Lyra
+  Ruy Geroncio da Silva Neto
+  João Vitor Fernandes de Souza
+</p>
