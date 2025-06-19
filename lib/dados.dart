@@ -101,3 +101,29 @@ final List<String> respostasCiencias = [
   'Estado sólido',
   'Oxigênio',
 ];
+
+final List<String> perguntasPortugues = [
+  'Como se chama a pontuação usada para terminar uma frase afirmativa?',
+  'Qual é o plural de "cachorro"?',
+  'Para que serve a interrogação ( ? )',
+  'A palavra "amigo" é um... (verbo / substantivo / adjetivo)',
+  'Qual é o antônimo (contrário) de "triste"?',
+  'Qual dessas palavras é um verbo? (comer / mesa / flor)',
+  'Qual o coletivo de lobos?',
+  'O que é uma sílaba?',
+  'Quais são as vogais?',
+  'O que é um substantivo?',
+];
+
+final List<String> respostasPortugues = [
+  'Ponto final',
+  'Cachorros',
+  'Fazer perguntas',
+  'Substantivo',
+  'Feliz',
+  'Comer',
+  'Alcateia',
+  'É o som ou grupo de sons de uma palavra',
+  ' A, E, I, O e U',
+  'É o nome de pessoas, lugares, objetos ou sentimentos',
+];
