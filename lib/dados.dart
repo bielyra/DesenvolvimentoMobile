@@ -23,3 +23,29 @@ final List<String> respostasMath = [
   '5 lápis',
   '10',
 ];
+
+final List<String> perguntasGeografia = [
+  'Como se chama o planeta onde vivemos?',
+  'O que é um mapa?',
+  'Qual é o maior oceano do mundo?',
+  'Como se chama a parte da Terra onde há árvores, rios e montanhas?',
+  'Quais são as estações do ano?',
+  'Qual é o nome do continente onde fica o Brasil?',
+  'O que usamos para nos localizar e saber onde estamos?',
+  'Como se chama o lugar onde a gente mora?',
+  'Qual é o nome do maior rio do Brasil?',
+  'O que separa os estados brasileiros?',
+];
+
+final List<String> respostasGeografia = [
+  'Terra',
+  'Um desenho que mostra lugares vistos de cima',
+  'Oceano Pacífico',
+  'Paisagem natural',
+  'Primavera, Verão, Outono e Inverno',
+  'América do Sul',
+  'O mapa ou a bússola',
+  'Moradia',
+  'Rio Amazonas',
+  'As fronteiras',
+];
