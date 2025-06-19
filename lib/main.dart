@@ -85,7 +85,7 @@ class _HomePageState extends State<HomePage> {
         backgroundColor: const Color(0xFFFFB74D),
         title: Text(
           "📘 Aprende Aí!",
-          style: GoogleFonts.roboto(
+          style: GoogleFonts.fredoka(
             fontWeight: FontWeight.bold,
             fontSize: 24,
           ),
